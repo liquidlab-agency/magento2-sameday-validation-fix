@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Liquidlab. All rights reserved.
+ * Fixes the Sameday shipping module to properly validate Country field
+ * which triggers shipping address validation and saving.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Liquidlab_SamedayValidationFix" setup_version="1.0.0">
+        <sequence>
+            <module name="Magento_Checkout"/>
+            <module name="SamedayCourier_Shipping"/>
+        </sequence>
+    </module>
+</config>
